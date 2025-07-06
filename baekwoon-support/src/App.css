@@ -1,0 +1,165 @@
+
+/* Custom Font Definitions */
+@font-face {
+  font-family: 'Ongleleaf Concon';
+  src: url('./fonts/온글잎 콘콘체.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TJ Singing Joy';
+  src: url('./fonts/TJJoyofsingingL.otf') format('opentype');
+  font-weight: 300; /* Light */
+}
+
+@font-face {
+  font-family: 'TJ Singing Joy';
+  src: url('./fonts/TJJoyofsingingM.otf') format('opentype');
+  font-weight: 400; /* Medium */
+}
+
+@font-face {
+  font-family: 'TJ Singing Joy';
+  src: url('./fonts/TJJoyofsingingB.otf') format('opentype');
+  font-weight: 700; /* Bold */
+}
+
+@font-face {
+  font-family: 'TJ Singing Joy';
+  src: url('./fonts/TJJoyofsingingEB.otf') format('opentype');
+  font-weight: 800; /* Extra Bold */
+}
+
+/* Global Styles */
+body {
+  font-family: 'Ongleleaf Concon', sans-serif;
+  background-color: #FFFBEF;
+}
+
+.App {
+  background-color: #FFFBEF;
+}
+
+.highlight-text {
+    font-family: 'TJ Singing Joy', sans-serif;
+    font-weight: 700;
+    color: #FFC230;
+    font-size: 1.3rem;
+}
+
+/* Header */
+.navbar {
+  background-color: #FFC230 !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  font-family: 'TJ Singing Joy', sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  color: #ffffff !important;
+}
+
+.nav-link {
+  font-family: 'TJ Singing Joy', sans-serif;
+  font-weight: 700;
+  color: #ffffff !important;
+  margin-left: 15px;
+}
+
+@media (min-width: 992px) {
+  .navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Main Content */
+main {
+  padding-top: 70px;
+}
+
+h2.section-title {
+  font-family: 'TJ Singing Joy', sans-serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Cards */
+.pledge-card, .candidate-card-wrapper {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+
+.pledge-card:hover, .candidate-card-wrapper:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.pledge-card.visible, .candidate-card-wrapper.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-title {
+  font-family: 'TJ Singing Joy', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.candidate-card h4 {
+    font-family: 'TJ Singing Joy', sans-serif;
+    font-weight: 700;
+    font-size: 1.7rem; /* 이름 크기 키움 */
+    color: #000000;
+}
+
+.candidate-card p {
+    font-family: 'Ongleleaf Concon', sans-serif;
+    font-size: 1.3rem; /* 직책 크기 키움 */
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+
+.candidate-image {
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+}
+
+#pledges {
+  padding: 60px 0;
+}
+
+#candidates {
+  background-color: #FFFBEF; /* 배경색 변경 */
+  padding: 60px 0;
+}
+
+#candidates .section-title {
+    color: #333;
+}
+
+.candidate-card-wrapper {
+    background-color: #ffffff; /* 카드 배경 흰색 */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* Detail Pages */
+.pledge-detail-title {
+    font-family: 'TJ Singing Joy', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    color: #333;
+}
