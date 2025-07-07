@@ -36,8 +36,8 @@ const PledgeDetail = () => {
       ) : (
         <h1 className="pledge-detail-title text-center mb-3">{pledge.title}</h1>
       )}
-      <p className="text-center highlight-text mb-3">{pledge.summary.split('\n').map((line, index) => (<React.Fragment key={index}>{line}{index < pledge.summary.split('\n').length - 1 && <br />}</React.Fragment>))}</p>
-      <p style={{ fontSize: '1.4rem', lineHeight: '1.1' }}>{pledge.description}</p>
+      <p className="text-center highlight-text mb-3 pre-wrap-text">{pledge.summary}</p>
+      <p className="pre-wrap-text" style={{ fontSize: '1.4rem', lineHeight: '1.1' }}>{pledge.description}</p>
     </Container>
   );
 };

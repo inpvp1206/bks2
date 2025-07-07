@@ -31,14 +31,14 @@ const PledgeCard = ({ id, title, description, image, detailId }) => {
             <Card.Body className="p-4 d-flex flex-column align-items-center justify-content-center">
               <img src={image} alt={title} className="pledge-emoji-img mb-3" />
               <Card.Title>{title}</Card.Title>
-              <Card.Text className="highlight-text">{description.split('\n').map((line, index) => (<React.Fragment key={index}>{line}{index < description.split('\n').length - 1 && <br />}</React.Fragment>))}</Card.Text>
+              <Card.Text className="highlight-text pre-wrap-text">{description}</Card.Text>
             </Card.Body>
           ) : (
             <>
               <Card.Img variant="top" src={image} />
               <Card.Body className="p-4">
                 <Card.Title>{title}</Card.Title>
-                <Card.Text className="highlight-text">{description.split('\n').map((line, index) => (<React.Fragment key={index}>{line}{index < description.split('\n').length - 1 && <br />}</React.Fragment>))}</Card.Text>
+                <Card.Text className="highlight-text pre-wrap-text">{description}</Card.Text>
               </Card.Body>
             </>
           )}

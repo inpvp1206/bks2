@@ -156,6 +156,11 @@ h2.section-title {
     box-shadow: 0 8px 16px rgba(0,0,0,0.1);
 }
 
+/* Text with preserved whitespace and line breaks */
+.pre-wrap-text {
+  white-space: pre-wrap;
+}
+
 /* Detail Pages */
 .pledge-detail-title {
     font-family: 'TJ Singing Joy', sans-serif;
