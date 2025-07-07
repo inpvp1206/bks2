@@ -2,7 +2,7 @@
 /* Custom Font Definitions */
 @font-face {
   font-family: 'Ongleleaf Concon';
-  src: url('./fonts/온글잎 콘콘체.ttf') format('truetype');
+  src: url('./fonts/온글잎 콘콘체.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -45,7 +45,7 @@ body {
     font-family: 'TJ Singing Joy', sans-serif;
     font-weight: 700;
     color: #FFC230;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 /* Header */
@@ -162,4 +162,10 @@ h2.section-title {
     font-weight: 800;
     font-size: 3rem;
     color: #333;
+}
+
+.pledge-emoji-img {
+  width: 100px; /* 이모지 이미지 크기 조절 */
+  height: 100px;
+  object-fit: contain; /* 이미지 비율 유지 */
 }
