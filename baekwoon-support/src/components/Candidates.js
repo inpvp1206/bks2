@@ -10,11 +10,11 @@ import seoa from '../images/1학년 부회장 김서아.jpeg';
 import haewon from '../images/1학년 부회장 이해원.jpeg';
 
 const candidates = [
-  { id: 'seoha', name: '서하선', position: '전교회장', image: seoha, summary: '여러분의 든든한 버팀목이 되겠습니다!' },
-  { id: 'eunseo', name: '정은서', position: '2학년 부회장', image: eunseo, summary: '언제나 여러분의 목소리에 귀 기울이겠습니다!' },
-  { id: 'inseo', name: '조인서', position: '2학년 부회장', image: inseo, summary: '실천하는 열정으로 보답하겠습니다!' },
-  { id: 'seoa', name: '김서아', position: '1학년 부회장', image: seoa, summary: '긍정 에너지로 가득한 학교를 만들겠습니다!' },
-  { id: 'haewon', name: '이해원', position: '1학년 부회장', image: haewon, summary: '항상 여러분 곁에서 함께 하겠습니다!' },
+  { id: 'seoha', name: '서하선', position: '전교회장', image: seoha, summary: '여러분을 지키는 든든한\n버팀목이 되겠습니다!' },
+  { id: 'eunseo', name: '정은서', position: '2학년 부회장', image: eunseo, summary: '보이지 않는 문제까지 살피고, \n끝까지 책임지는 \n 부회장이 되겠습니다!' },
+  { id: 'inseo', name: '조인서', position: '2학년 부회장', image: inseo, summary: '컴공의 문제해결 정석을\n보여드리겠습니다!' },
+  { id: 'seoa', name: '김서아', position: '1학년 부회장', image: seoa, summary: '책임감은 기본,\n긍정은 제 특기입니다!' },
+  { id: 'haewon', name: '이해원', position: '1학년 부회장', image: haewon, summary: '작은 목소리도 놓치지 않는 \n 부회장이 되겠습니다!' },
 ];
 
 const CandidateCard = ({ id, name, position, image, summary }) => {
@@ -31,7 +31,7 @@ const CandidateCard = ({ id, name, position, image, summary }) => {
             <Image src={image} fluid className="mb-3 candidate-image" />
             <h4>{name}</h4>
             <p>{position}</p>
-            <span className="highlight-text">{summary}</span>
+            <span className="highlight-text pre-wrap-text">{summary}</span>
           </div>
         </div>
       </Link>
